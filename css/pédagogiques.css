@@ -2,25 +2,18 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-}
-    
-.whiteSpace
-{
+} 
+.whiteSpace{
     height: 120px;
 }
-    .padding
-    {
-        padding-left: 16%;
-        padding-right: 16%;
-    }
-    
+.padding{
+    padding-left: 16%;
+    padding-right: 16%;
+}
 /* --------------------------------------------------start navbar------------------------------------------------- */
-#myCheck
-{   
-    position: absolute;    
+#myCheck{   
     visibility: hidden;
 }
-
 nav ul{
     top: 0%;
     position: fixed;
@@ -30,20 +23,13 @@ nav ul{
     width: 100%;
     z-index: 5;
 }
-
-#myCheck
-{
-    position: absolute;    
-    visibility: hidden;
-}
-
-.logo
-{
+.logo{
     padding: 12px 50px 8px 50px;
 }
-
-nav ul li
-{
+.logo img{
+    width: 180px;
+}
+nav ul li{
     padding-left: 30px;
     padding-top: 30px;
     padding-bottom:16px ;
@@ -53,9 +39,7 @@ nav ul li
     font-weight: bold;
     line-height: 24px;
 }
-
-li a
-{
+li a{
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     color: whitesmoke;
@@ -63,20 +47,14 @@ li a
     font-weight: bold;
     line-height: 24px;
 }
-
-nav ul li:hover
-{
+nav ul li:hover{
     color: rgb(51, 122, 183);
 }
-
-li a:hover
-{
+li a:hover{
     color: rgb(51, 122, 183);
 
 }
-
-nav ul li button
-{
+nav ul li button{
     height: 32px;
     width: 160px;
     color: white;
@@ -85,52 +63,43 @@ nav ul li button
     border: none;
     border-radius: 30px;
     box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0.3) ;
-
 }
-nav ul li button:hover
-{
+nav ul li button:hover{
     background-color: white;
     color: rgb(0, 138, 255);
     box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0) ;
-
 }
 @media(max-width:1415px){
     nav ul{
         padding: 0% !important;
     }
-
 }
-
-
 @media(max-width:1200px){
-        .padding
-    {
+    .padding{
         padding: 0;
     }
-    
-    #myCheck
-    {
-        visibility: visible;
-        top: 0;
-        margin-top: 3%;
-        margin-left: 3%;
-        z-index: 10;
+    .menuIcon{
         position: fixed;
+        top: 1%;
+        left: 5%;
+        z-index: 10;
     }
-    nav ul
-    {
+    .menuIcon span{
+        border-bottom: 3px solid #fff;
+        height: 8px;
+        width: 24px;
+        display: block;
+    }
+    #myCheck:checked ~nav ul{
+        visibility: visible;
+    }
+    nav ul{
         visibility: collapse;
         display: block;
         position: fixed;
-        width: 40%;
+        width: 60%;
         z-index: 7;
     }
-
-    #myCheck:checked ~nav ul
-    {
-        visibility: visible;
-    }
-
     nav ul li 
     {
         text-align: left;
@@ -141,44 +110,38 @@ nav ul li button:hover
         font-weight: bold;
         line-height: 24px;
     }
-    .accueil
-    {
+    .accueil{
         padding-top: 80px;
-
     }
-
-
-    .logo
-    {
+    .logo{
         position: fixed;
         text-align: center;
         background-color: black;
         width: 100%;
         visibility: visible;
+        padding: 8px 0 0 0;
     }
-
-    nav ul li button
-    {
+    .logo img{
+        width: 145px;
+    }
+    nav ul li button{
         height: 20px;
         width: 80px;
         font-size: 12px;
     }
 }
-
 /* ---------------------------------------------end navbar-------------------------------------------------------- */
 /* ---------------------------------------------start header------------------------------------------------------ */
-.homebackground
-{   
+.homebackground{   
     position: absolute;
     top: 0%;
     height: 50%;
     width:100%;
     background-image: url(../images/slide1.jpg);
     background-size: cover;
+    background-position-y: center;
 }
-
-.bg
-{
+.bg{
     position: fixed;
     top: 0%;
     height: 100%;
@@ -186,23 +149,18 @@ nav ul li button:hover
     background-image: url(../images/bgfound.png);
     z-index: -100;
 } 
-
 .title{
     margin-top: 10%;
     margin-bottom: 8px;
     margin-left: 3%;
     font-family: 'Montserrat', sans-serif;
     color: white;
-
 }
-.p1
-{
+.p1{
     font-size: 42px;
     margin-bottom: 8px;
 }
-
 .p2{
-    
     padding: 10px;
     font-size: 20px;
     margin-bottom: 16px;
@@ -215,17 +173,13 @@ nav ul li button:hover
     border: 2px solid;
     border-radius: 30px;
     padding: 12px 50px 12px 50px;
-
 }
-.inscrisbtn:hover
-{
+.inscrisbtn:hover{
     background-color: white;
     color:rgb(73, 97, 116) ;
     border-color: white;
-
 }
-.découvrebtn
-{
+.découvrebtn{
     font-family: 'Montserrat', sans-serif;
     color: white;
     font-size: 20px;
@@ -235,13 +189,11 @@ nav ul li button:hover
     padding: 12px 60px 12px 60px;
     box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0.3) ;
 }
-.découvrebtn:hover
-{
+.découvrebtn:hover{
     background-color: white;
     color:rgb(73, 97, 116) ;
     border-color: white;
     box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0) ;
-
 }
 
 @media(max-width:767px)
@@ -251,32 +203,27 @@ nav ul li button:hover
         position: static;
         margin: 0;
     }
-    .title
-    {
+    .title{
         display: block;
         text-align: center;
         padding-top: 25%;
         margin:0;
     }
-    .p1
-    {
+    .p1{
         font-size: 24px;
     }
-    .p2
-    {
+    .p2{
         font-size: 16px;
         padding-top: 24px;
     }
-    .inscrisbtn
-    {
+    .inscrisbtn{
         display: block;
         text-align: center;
         font-size: 16px;
         padding: 8px 30px 8px 30px;
         margin: auto;
     }
-    .découvrebtn
-    {
+    .découvrebtn{
         display: block;
         text-align: center;
         font-size: 16px;
@@ -284,8 +231,6 @@ nav ul li button:hover
         margin: 16 auto 8;
     }
 }
-    
-    
 /* ---------------------------------------------end header-------------------------------------------------------  */
 /* --------------------------------------------start section1----------------------------------------------------- */
     
@@ -296,25 +241,19 @@ nav ul li button:hover
     font-size: 38px;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
-
 }
-
-.paragraph p
-{
+.paragraph p{
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
 }
-.container-carts
-{
+.container-carts{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.cart
-{
+.cart{
 width: 30%;
 margin-top: 30px;
 padding-top: 30px;
@@ -323,49 +262,37 @@ box-shadow: 8px 8px 8px 8px rgb(0, 0, 0, .1);
 font-family: 'Montserrat', sans-serif;
 text-align: center;
 }
-.cart img
-{
+.cart img{
     padding: 30px 0;
 }
-.cart h2
-{
+.cart h2{
     padding-left: 15px;
     padding-right: 15px;
 }
-.cart p
-{
+.cart p{
     padding: 30px;
 }
 
 @media(max-width:767px){
     
-    .paragraph
-    {
+    .paragraph{
         margin-top: 60px;
-
     }
-    .paragraph h2
-    {
+    .paragraph h2{
         margin-top: 0%;
     }
-    .container-carts
-    {
+    .container-carts{
         display: block;
-        
     }
-    .cart
-    {
+    .cart{
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-}
-    
+    }
 }
 /*------------------------------------------------- end section1 ---------------------------------------------------*/
 
 /*------------------------------------------------- end section1 ---------------------------------------------------*/
-
-
 .paragraph1 h2{
     margin-top: 80px;
     text-align: center;
@@ -375,27 +302,21 @@ text-align: center;
     font-family: 'Raleway', sans-serif;
     font-weight: normal;
 }
-
-.paragraph1 p
-{
+.paragraph1 p{
     padding-left: 50px;
     padding-right: 50px;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
 }
-.container-journnée
-{
+.container-journnée{
     background-color: rgb(0, 138, 255);
     margin-top: 16px;
 }
-
 .timeline {
     max-width: 900px;
     margin: auto;
     position: relative;
 }
-
 .timeline:after {
     content: '';
     position: absolute;
@@ -406,7 +327,6 @@ text-align: center;
     left: 50%;
     margin-left: -2px;
 }
-
 .container {
     width: 50%;
     padding: 10px 30px;
@@ -414,7 +334,6 @@ text-align: center;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
 }
-
 .container:after {
     content: '';
     position: absolute;
@@ -427,32 +346,26 @@ text-align: center;
     z-index: 1;
     top: 15px;
 }
-
 .content {
     background: #fff;
     padding: 20px 30px;
     border-radius: 10px;
 }
-.content h2
-{
+.content h2 {
     padding: 8px 0;
     font-size: 18px;
 }
-
 .left {
     left: 0;
 }
-
 .right {
     left: 50%;
 }
-
 .right:after {
     left: -17px;
 }
 
 /* traingle */
-
 .left:before {
     content: '';
     position: absolute;
@@ -465,7 +378,6 @@ text-align: center;
     right: 10px;
     top: 22px;
 }
-
 .right:before {
     content: '';
     position: absolute;
@@ -478,7 +390,6 @@ text-align: center;
     left: 10px;
     top: 22px;
 }
-
 /* media */ 
 
 @media(max-width:767px) {
@@ -496,7 +407,6 @@ text-align: center;
     .right {
         left: 0;
     }
-    
     .left:before , .right:before {
         border-right: 10px solid #fff;
         border-top: 10px solid transparent;
@@ -507,30 +417,19 @@ text-align: center;
     }
 }
 
-
-
-
-
-
-
 /*------------------------------------------------ start siction2 --------------------------------------------------*/
-.col3
-{
+.col3{
     display: flex;
     width: 100%;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     padding-bottom: 100px;
 }
-.col3 div
-{
+.col3 div{
     width: 50%;
     font-size: 32px;
-
 }
-
-.col3 button
-{
+.col3 button{
     padding: 12px 40% 12px 40%;
     color: white;
     background-color: rgb(0, 138, 255);
@@ -538,29 +437,22 @@ text-align: center;
     box-shadow: 0px 0px 12px 12px rgb(0, 138, 255, 0.2) ;
     border-radius: 30px;
 }
-.col3 button:hover
-{
+.col3 button:hover{
     background-color:white ;
     color:rgb(0, 138, 255) ;
     box-shadow: 0px 8px 8px 8px rgba(2, 2, 2, 0.1) ;
 }
 
-@media(max-width:767px)
-{   
-    .col3
-    {
+@media(max-width:767px){   
+    .col3{
         display: block;
         font-size: 24px;
         text-align: center;
-
     }
-    .col3 div
-    {
+    .col3 div{
         width: 100%;
     }
-
-    .col3 button
-    {
+    .col3 button{
         padding: 8px 20% 8px 20%;
         font-size: 12px;
         margin: 0%;
@@ -571,84 +463,58 @@ text-align: center;
 /* -----------------------------------------end siction2--------------------------------------------------------- */
     
 /* -----------------------------------------start footer--------------------------------------------------------- */
-footer
-{
+footer{
     background-color: black;
     display: flex;
     width: 100%;
-
 }
-/* .footer
-{
-    display: flex;
-} */
-.contactez
-{
-    /* width: 90%; */
-}
-.contactez p
-{
+.contactez p{
     color: rgb(119, 119, 119);
     font: 16px sans-serif;
     letter-spacing: 0.08em;
     padding: 8px 0px 0px 32px;
 }
-
-.youcode
-{
+.youcode{
     margin: 24px 30% 0 30% ;
     color: rgb(119, 119, 119);
     font:  15px sans-serif;
     letter-spacing: 0.08em;
 }
-
-.suivez
-{
+.suivez{
     color:rgb(119, 119, 119);
     font: 16px sans-serif;
     letter-spacing: 0.08em;
     padding: 8px  16px 8px 16px;
 }
-
-footer ul
-{   
+footer ul{   
     display: flex;
     list-style: none;
     float: right;
     bottom: 0;
 }
-
-footer ul li
-{
+footer ul li{
     padding:8px;
 }
-
 @media(max-width:1200px){
-    footer
-    {
+    footer{
         display: block;
     }
-    .contactez 
-    {
+    .contactez{
         padding: 0;
         text-align: center;
     }
-    .youcode 
-    {
+    .youcode {
         padding: 0;
         text-align: center;
     }
-    .suivez
-    {
+    .suivez {
         padding: 0;
         text-align: center;
     }
-    footer ul
-    {   
+    footer ul{   
         float:none;
         justify-content: center;
     }
-
 }
 /* ------------------------------end footer----------------------------------- */
 
